@@ -64,7 +64,7 @@ export async function GET(req: Request) {
     status: 200,
     headers: {
       'content-type': 'application/xml',
-      'cache-control': 's-maxage=2',
+      'cache-control': 's-maxage=31556952',
     },
   })
 }
