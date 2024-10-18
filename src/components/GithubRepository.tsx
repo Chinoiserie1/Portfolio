@@ -56,8 +56,6 @@ export const GithubRepository = () => {
       </Container>
     )
 
-  console.log(data)
-
   return (
     <Container>
       <h1 className="pt-12 text-xl font-bold tracking-tight text-zinc-800 sm:text-2xl dark:text-zinc-100">

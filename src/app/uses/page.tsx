@@ -100,6 +100,13 @@ export default function Uses() {
             aspects of development, enhancing overall productivity and the
             quality of the applications I build.
           </Tool>
+          <Tool title="Github Copilot">
+            GitHub Copilot is an AI-powered code completion tool that helps me
+            write code faster and more efficiently. By providing intelligent
+            code suggestions and automating repetitive tasks, Copilot enables me
+            to focus on the creative and strategic aspects of development,
+            enhancing my productivity and the quality of the code I produce.
+          </Tool>
         </ToolsSection>
       </div>
     </SimpleLayout>
