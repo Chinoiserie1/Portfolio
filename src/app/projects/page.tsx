@@ -8,8 +8,15 @@ import logoPolygon from '@/images/logos/polygon-matic-logo.svg'
 import logoMetahood from '@/images/logos/metahood.ico'
 import logoArthera from '@/images/logos/arthera.png'
 import logoMintup from '@/images/logos/mintup.ico'
+import logoTrenches from '@/images/logos/trenches.png'
 
 const projects = [
+  {
+    name: 'Trenches',
+    description: 'Tokenize your reputation as an alpha caller',
+    link: { href: 'https://trenches.top', label: 'trenches.top' },
+    logo: logoTrenches,
+  },
   {
     name: 'Metahood',
     description: 'NFTs marketplace for metaverse assets',
