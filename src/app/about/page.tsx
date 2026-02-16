@@ -49,7 +49,7 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'I’m Jérémie Lucotte. A free-lance blockchain developper',
+  description: "I'm Jérémie Lucotte. A Paris-based Full-Stack Developer with over five years of experience in the blockchain ecosystem and startup environments.",
 }
 
 export default function About() {
@@ -68,48 +68,68 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            I’m Jérémie Lucotte. I live in Paris.
+            I&apos;m Jérémie Lucotte. A Paris-based Full-Stack Developer.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I am a Blockchain Developer with a deep-rooted passion for
-              technology and an unwavering ambition to evolve into a Full Stack
-              Developer. Currently based in the dynamic tech landscape of Paris,
-              my journey has been fueled by a fascination with the revolutionary
-              potential of blockchain technology and a desire to broaden my
-              horizons across the entire development stack.
+              I&apos;m Jérémie Lucotte, a Paris-based Full-Stack Developer with
+              over five years of experience in the blockchain ecosystem and
+              startup environments.
             </p>
             <p>
-              With a robust foundation in creating secure and innovative
-              blockchain solutions, including smart contracts, decentralized
-              applications (dApps), and NFTs, I have honed my skills in the
-              intricacies of decentralized technology. My work has not only been
-              about crafting solutions but also about envisioning and bringing
-              to life applications that redefine interactions and transactions
-              in the digital age.
+              My work sits at the intersection of distributed systems, product
+              engineering, and emerging technologies. I&apos;ve built secure
+              smart contracts, decentralized applications, and production-grade
+              web platforms, while progressively expanding into broader
+              full-stack architectures, designing and delivering end-to-end
+              systems that scale.
             </p>
             <p>
-              As I venture into the realms of Full Stack Development, my goal is
-              to integrate my blockchain expertise with comprehensive knowledge
-              and skills in frontend and backend development. This transition is
-              driven by a desire to build more holistic and versatile tech
-              solutions—ones that encapsulate the essence of both the user
-              interface and the underlying blockchain technology.
+              Working in startups has shaped my engineering mindset. I&apos;ve
+              learned to move quickly without compromising structure, to design
+              systems with long-term maintainability in mind, and to balance
+              technical excellence with real product impact. From early-stage
+              prototypes to production deployments, I focus on building
+              solutions that are robust, scalable, and aligned with user needs.
             </p>
             <p>
-              This portfolio is a testament to my journey so far and my path
-              forward. It showcases projects that underline my expertise in
-              blockchain while gradually incorporating full stack projects that
-              reflect my evolving skill set. My ambition is to bridge the gap
-              between the decentralized and traditional web development worlds,
-              delivering seamless, secure, and innovative solutions.
+              My background in blockchain development strengthened my approach
+              to security, performance, and system architecture. Developing
+              decentralized systems requires careful reasoning about edge cases,
+              reliability, and data integrity principles that now inform all
+              the software I build, whether blockchain-based or not.
             </p>
             <p>
-              Whether you&apos;re here to explore blockchain projects, full
-              stack developments, or the intersection of both, I invite you to
-              delve into my work. Let&apos;s navigate the future of technology
-              together, building solutions that stand at the forefront of
-              innovation and user experience.
+              Beyond hands-on development, I currently run the EECI-IGSC module
+              program at CentraleSupélec, contributing to the design and
+              structuring of advanced technical modules. This role allows me to
+              combine technical depth with strategic thinking and educational
+              impact, ensuring that innovation is supported by strong
+              engineering foundations.
+            </p>
+            <p>
+              Throughout my journey, I&apos;ve participated in and won
+              hackathons, collaborated with multidisciplinary teams, and worked
+              in fast-paced environments where adaptability and ownership are
+              essential. These experiences have strengthened both my technical
+              and collaborative skills.
+            </p>
+            <p>
+              I am particularly interested in emerging fields such as artificial
+              intelligence, robotics, and decentralized technologies. I&apos;m
+              drawn to domains where engineering challenges push boundaries and
+              where thoughtful system design can unlock entirely new
+              possibilities.
+            </p>
+            <p>
+              This portfolio reflects my evolution as a builder — from
+              blockchain-native development to full-stack system architecture —
+              and showcases projects that emphasize scalability, clarity, and
+              long-term technical vision.
+            </p>
+            <p>
+              I&apos;m always motivated by complex problems, ambitious products,
+              and teams that aim to build meaningful technology.
             </p>
           </div>
         </div>

@@ -1,33 +1,161 @@
 import { type Metadata } from 'next'
-import Image from 'next/image'
 
-import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
+import {
+  ProjectCard,
+  type Project,
+} from '@/components/ProjectHoverDialog'
 import logoUndoxxed from '@/images/logos/UNDXX.svg'
 import logoPolygon from '@/images/logos/polygon-matic-logo.svg'
 import logoMetahood from '@/images/logos/metahood.ico'
 import logoArthera from '@/images/logos/arthera.png'
 import logoMintup from '@/images/logos/mintup.ico'
 import logoTrenches from '@/images/logos/trenches.png'
+import logoCushion from '@/images/logos/logoCushion.svg'
+import logoEECI from '@/images/logos/eeci.webp'
 
-const projects = [
+const projects: Project[] = [
+  {
+    name: 'EECI',
+    description: 'European Embedded Control Institute',
+    link: { href: 'https://www.eeci-igsc.eu/', label: 'eeci-igsc.eu' },
+    logo: logoEECI,
+    details: {
+      description:
+        'Website for an international graduate school on control engineering, featuring course management and registration systems.',
+      techStack: [
+        { name: 'Next.js', icon: 'nextjs' },
+        { name: 'TypeScript', icon: 'typescript' },
+        { name: 'Tailwind CSS', icon: 'tailwind' },
+        { name: 'Resend', icon: 'resend' },
+        // { name: 'Matomo', icon: 'matomo' },
+        { name: 'PostgreSQL', icon: 'postgresql' },
+        { name: 'Prisma', icon: 'prisma' },
+        { name: 'Git', icon: 'git' },
+        { name: 'Vercel', icon: 'vercel' },
+      ],
+      role: 'Full-stack Developer',
+      status: 'live',
+      features: [
+        'Module catalog and registration system',
+        'back-office for course management',
+        'Stripe integration for payments',
+        'User account management',
+        'email using resend',
+        'Analytics using matomo',
+        'CI/CD pipeline using vercel, github actions and husky',
+      ],
+    },
+  },
   {
     name: 'Trenches',
-    description: 'Tokenize your reputation as an alpha caller',
+    description: 'Tokenize your reputation as an alpha caller. RADAR Colosseum hackathon winner',
     link: { href: 'https://trenches.top', label: 'trenches.top' },
     logo: logoTrenches,
+    details: {
+      description:
+        'An app that allows crypto traders to tokenize their track record and reputation, enabling followers to copy trades.',
+      techStack: [
+        { name: 'Rust', icon: 'rust' },
+        { name: 'Next.js', icon: 'nextjs' },
+        { name: 'Solana', icon: 'solana' },
+        { name: 'Express.js', icon: 'express' },
+        { name: 'PostgreSQL', icon: 'postgresql' },
+        { name: 'Prisma', icon: 'prisma' },
+        { name: 'Tailwind CSS', icon: 'tailwind' },
+        { name: 'Vercel', icon: 'vercel' },
+        { name: 'Railway', icon: 'railway' },
+        { name: 'Docker', icon: 'docker' },
+        { name: 'Git', icon: 'git' },
+        { name: 'TypeScript', icon: 'typescript' },
+      ],
+      role: 'Full-stack Developer',
+      status: 'archived',
+      features: [
+        'Bonding curve for alpha caller reputation',
+        'On-chain performance tracking',
+        'Copy trading mechanism',
+        'telegram bot',
+      ],
+    },
+  },
+  {
+    name: 'Cushion',
+    description: 'CPPI strategy vault, max TVL 250k USD',
+    link: { href: 'https://www.cushion.trade', label: 'cushion.trade' },
+    logo: logoCushion,
+    details: {
+      description:
+        'A DeFi vault implementing Constant Proportion Portfolio Insurance (CPPI) strategy for risk-managed yield generation.',
+      techStack: [
+        { name: 'Next.js', icon: 'nextjs' },
+        { name: 'TypeScript', icon: 'typescript' },
+        { name: 'Python', icon: 'python' },
+        { name: 'PostgreSQL', icon: 'postgresql' },
+        { name: 'Prisma', icon: 'prisma' },
+        { name: 'Tailwind CSS', icon: 'tailwind' },
+        { name: 'Vercel', icon: 'vercel' },
+        { name: 'Railway', icon: 'railway' },
+        { name: 'Docker', icon: 'docker' },
+        { name: 'Git', icon: 'git' },
+      ],
+      role: 'Full-stack Developer',
+      status: 'archived',
+      features: [
+        'CPPI strategy implementation',
+        'ERC4626 vault standard',
+        'Automated rebalancing',
+        'Risk parameter configuration',
+      ],
+    },
   },
   {
     name: 'Metahood',
     description: 'NFTs marketplace for metaverse assets',
     link: { href: 'https://metahood.xyz', label: 'metahood.xyz' },
     logo: logoMetahood,
+    details: {
+      description:
+        'A specialized NFT marketplace focused on metaverse real estate and virtual assets trading.',
+      techStack: [
+        { name: 'Solidity', icon: 'solidity' },
+        { name: 'Next.js', icon: 'nextjs' },
+        { name: 'PostgreSQL', icon: 'postgresql' },
+        { name: 'IPFS', icon: 'ipfs' },
+        { name: 'Ethereum', icon: 'ethereum' },
+      ],
+      role: 'Blockchain Developer',
+      status: 'live',
+      features: [
+        'Multi-chain NFT listings',
+        'Metaverse asset categorization',
+        'Auction and fixed-price sales',
+      ],
+    },
   },
   {
     name: 'Undoxxed Book website',
     description: 'Mint website using next.js and postgreSQL',
     link: { href: 'https://mint.undoxxedbook.com', label: 'undoxxedbook.com' },
     logo: logoUndoxxed,
+    details: {
+      description:
+        'NFT minting website for Undoxxed Book collection with waitlist management and minting phases.',
+      techStack: [
+        { name: 'Next.js', icon: 'nextjs' },
+        { name: 'TypeScript', icon: 'typescript' },
+        { name: 'PostgreSQL', icon: 'postgresql' },
+        { name: 'Prisma', icon: 'prisma' },
+        { name: 'Tailwind CSS', icon: 'tailwind' },
+      ],
+      role: 'Full-stack Developer',
+      status: 'live',
+      features: [
+        'Multi-phase minting (whitelist, public)',
+        'Wallet verification',
+        'Real-time mint tracking',
+      ],
+    },
   },
   {
     name: 'Undoxxed Book smart-contract',
@@ -37,6 +165,23 @@ const projects = [
       label: 'etherscan.io',
     },
     logo: logoUndoxxed,
+    details: {
+      description:
+        'Production ERC721 smart contract deployed on Ethereum mainnet, professionally audited for security.',
+      techStack: [
+        { name: 'Solidity', icon: 'solidity' },
+        { name: 'Hardhat', icon: 'hardhat' },
+        { name: 'Ethereum', icon: 'ethereum' },
+      ],
+      role: 'Smart Contract Engineer',
+      status: 'live',
+      features: [
+        'Gas-optimized minting',
+        'Merkle tree whitelist verification',
+        'Royalty support (ERC2981)',
+        'Audited by Opengem',
+      ],
+    },
   },
   {
     name: 'Eteos',
@@ -44,31 +189,70 @@ const projects = [
       'UUPS Proxy, ERC721 with on-chain metadata for real world asset',
     link: { href: 'https://eteos.io', label: 'eteos.io' },
     logo: logoPolygon,
+    details: {
+      description:
+        'Real-world asset tokenization platform using upgradeable smart contracts with fully on-chain metadata.',
+      techStack: [
+        { name: 'Solidity', icon: 'solidity' },
+        { name: 'Polygon', icon: 'polygon' },
+        { name: 'Hardhat', icon: 'hardhat' },
+        { name: 'Next.js', icon: 'nextjs' },
+      ],
+      role: 'Lead Blockchain Developer',
+      status: 'archived',
+      features: [
+        'UUPS upgradeable proxy pattern',
+        'On-chain SVG metadata generation',
+        'RWA compliance features',
+      ],
+    },
   },
   {
     name: 'Mintup',
     description: 'ERC721 factory',
     link: { href: 'https://mintup.io/fr', label: 'mintup.io' },
     logo: logoMintup,
+    details: {
+      description:
+        'No-code NFT collection deployment platform allowing creators to launch their own ERC721 contracts.',
+      techStack: [
+        { name: 'Solidity', icon: 'solidity' },
+        { name: 'React', icon: 'react' },
+        { name: 'Node.js', icon: 'nodejs' },
+        { name: 'Ethereum', icon: 'ethereum' },
+      ],
+      role: 'Smart Contract Developer',
+      status: 'archived',
+      features: [
+        'Factory pattern deployment',
+        'Customizable contract parameters',
+        'Multi-chain support',
+      ],
+    },
   },
   {
     name: 'Pixchain',
     description: 'Smart-contract ERC721',
     link: { href: 'https://pixchain.app', label: 'pixchain.app' },
     logo: logoArthera,
+    details: {
+      description:
+        'NFT collection deployed on Arthera blockchain for digital art and collectibles.',
+      techStack: [
+        { name: 'Solidity', icon: 'solidity' },
+        { name: 'Hardhat', icon: 'hardhat' },
+        { name: 'TypeScript', icon: 'typescript' },
+      ],
+      role: 'Blockchain Developer',
+      status: 'archived',
+      features: [
+        'ERC721 implementation',
+        'Arthera chain deployment',
+        'Metadata management',
+      ],
+    },
   },
 ]
-
-function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-      <path
-        d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z"
-        fill="currentColor"
-      />
-    </svg>
-  )
-}
 
 export const metadata: Metadata = {
   title: 'Projects',
@@ -78,32 +262,15 @@ export const metadata: Metadata = {
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Things I’ve made trying to put my dent in the universe."
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+      title="Things I've made trying to put my dent in the universe."
+      intro="I've worked on tons of little projects over the years but these are the ones that I'm most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
     >
       <ul
         role="list"
         className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
       >
         {projects.map((project) => (
-          <Card as="li" key={project.name}>
-            <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-              <Image
-                src={project.logo}
-                alt=""
-                className="h-8 w-8"
-                unoptimized
-              />
-            </div>
-            <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-              <Card.Link href={project.link.href}>{project.name}</Card.Link>
-            </h2>
-            <Card.Description>{project.description}</Card.Description>
-            <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
-              <LinkIcon className="h-6 w-6 flex-none" />
-              <span className="ml-2">{project.link.label}</span>
-            </p>
-          </Card>
+          <ProjectCard key={project.name} project={project} />
         ))}
       </ul>
     </SimpleLayout>

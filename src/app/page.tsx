@@ -263,13 +263,12 @@ export default async function Home() {
             Blockchain developper
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I&apos;m Jérémie, a Blockchain Developer with a deep-rooted passion
-            for technology and an unwavering ambition to evolve into a Full
-            Stack Developer. Currently based in the dynamic tech landscape of
-            Paris, my journey has been fueled by a fascination with the
-            revolutionary potential of blockchain technology and a desire to
-            broaden my horizons across the entire development stack.
+          I&apos;m Jérémie, a Full-Stack Developer with a deep-rooted passion for technology and innovation. Currently based in the dynamic tech landscape of
+            Paris.
           </p>
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">With over five years of experience in the blockchain space, I’ve contributed to early-stage and scaling startups, designing and shipping robust full-stack solutions. I enjoy taking ownership of projects from system design to production deployment.</p>
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">Alongside my development work, I currently run the EECI-IGSC module program from CentraleSupélec.</p>
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">I’m deeply curious about AI, robotics, and decentralized systems, and I continuously explore how emerging technologies can translate into real-world applications.</p>
           <div className="mt-6 flex gap-6">
             <SocialLink
               href="https://twitter.com/__chixx__eth"

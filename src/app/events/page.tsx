@@ -53,7 +53,37 @@ export default function Events() {
       intro="One of the best parts of my journey has been the opportunity to meet and speak with so many people. Here are some of the events I’ve been a part of."
     >
       <div className="space-y-20">
+      <EventsSection title="Events">
+        <Appearance
+          href="https://x.com/mtndao"
+          title="MtnDAO February 2025 and August 2025"
+          description="The world-class, action packed startup experience"
+          event="MtnDAO"
+          cta="link to event"
+        />
+      </EventsSection>
         <EventsSection title="Hackathons">
+          <Appearance
+            href="https://colosseum.com/cypherpunk"
+            title="Colosseum hackathon Cypherpunk"
+            description="Solana's hackathon, accelerator, and venture fund | http://colosseum.com"
+            event="Colosseum"
+            cta="link to event"
+          />
+          <Appearance
+            href="https://t.co/4cecy5wLJB"
+            title="Solana Mobile Hackathon by Radiants"
+            description="An on-chain cadre of talented storytellers, creators, developers, & artists. Hosts of the Solana Mobile Hackathon & the Bonkathon."
+            event="Solana Mobile"
+            cta="link to event"
+          />
+          <Appearance
+            href="https://colosseum.com/breakout"
+            title="Colosseum hackathon Breakout"
+            description="Solana's hackathon, accelerator, and venture fund | http://colosseum.com"
+            event="Colosseum"
+            cta="link to event"
+          />
           <Appearance
             href="https://society.ton.org/paris-bootcamp-hackers-league-hackathon-oct-18"
             title="Paris Bootcamp | Hackers League Hackathon"
