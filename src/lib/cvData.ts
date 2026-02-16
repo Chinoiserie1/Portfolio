@@ -8,6 +8,7 @@ export const cvData = {
   },
   contact: {
     email: 'contact@jeremielucotte.com',
+    website: 'jeremielucotte.com',
     github: 'github.com/Chinoiserie1',
     linkedin: 'linkedin.com/in/jeremielucotte',
     twitter: 'twitter.com/chixxdev',

@@ -137,6 +137,9 @@ export function CVDocument() {
             <Text style={styles.title}>{cvData.profile.title} • {cvData.profile.location}</Text>
             <View style={styles.contactRow}>
               <Text>{cvData.contact.email}</Text>
+              <Link style={styles.link} src={`https://${cvData.contact.website}`}>
+                <Text>{cvData.contact.website}</Text>
+              </Link>
               <Link style={styles.link} src={`https://${cvData.contact.github}`}>
                 <Text>{cvData.contact.github}</Text>
               </Link>
