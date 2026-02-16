@@ -15,7 +15,7 @@ export const cvData = {
   skills: [
     { category: 'Blockchain', items: ['Solidity', 'Rust', 'Hardhat', 'Foundry'] },
     { category: 'Frontend', items: ['React', 'Next.js', 'React Native', 'Expo', 'TypeScript', 'Tailwind CSS'] },
-    { category: 'Backend', items: ['Node.js', 'Express', 'Nest.js', 'Fastify', 'Python', 'Rust', 'PostgreSQL', 'Prisma'] },
+    { category: 'Backend', items: ['Node.js', 'Express', 'Nest.js', 'Fastify', 'Rust', 'PostgreSQL', 'Prisma'] },
     { category: 'DevOps', items: ['Docker', 'Git', 'Vercel', 'Railway', 'PostHog'] },
   ],
   projects: [
