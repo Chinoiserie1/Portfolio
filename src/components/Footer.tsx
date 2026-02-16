@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 import { ContainerInner, ContainerOuter } from '@/components/Container'
+import { CVDownloadButton } from '@/components/CV/CVDownloadButton'
 
 function NavLink({
   href,
@@ -32,6 +33,7 @@ export function Footer() {
                 <NavLink href="/projects">Projects</NavLink>
                 <NavLink href="/events">Events</NavLink>
                 <NavLink href="/uses">Uses</NavLink>
+                <CVDownloadButton />
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; {new Date().getFullYear()} LUCOTTE JEREMIE CHONG-HEI Sole
